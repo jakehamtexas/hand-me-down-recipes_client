@@ -1,3 +1,5 @@
 export const routes = {
-  recipe: "recipe"
+  recipe: "recipe",
+  test: "test",
+  init: "init"
 };

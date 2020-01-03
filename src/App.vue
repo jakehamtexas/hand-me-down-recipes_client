@@ -1,12 +1,24 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Dashboard</router-link> |
+      <router-link to="/">Dashboard</router-link>|
       <router-link to="/recipes">Recipes</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+import { http } from "./common/http";
+import { routes } from "./common/routes";
+
+export default {
+  async created() {
+    const { data } = await http.get(routes.init);
+    console.log(data);
+  }
+};
+</script>
 
 <style lang="scss">
 #app {

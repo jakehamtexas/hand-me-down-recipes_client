@@ -1,0 +1,9 @@
+Put init data into some global singleton (templates)
+Build components (functional):
+  recipe card
+  recipe expanded (edit functionality)
+  recipe add (derivative of prev)
+
+1.1
+Dashboard functional stuff
+Styling for recipe stuff
